@@ -1,0 +1,15 @@
+<!-- app_transporte/templates/app_transporte/deletar.html -->
+{% extends 'base_generic.html' %}
+{% load static %}
+
+{% block title %}Deletar Funcionário{% endblock %}
+
+{% block content %}
+  <h1>Deletar Funcionário</h1>
+  <p>Você tem certeza que deseja deletar o funcionário "{{ funcionario.nome }}"?</p>
+  <form method="post" action="{% url 'deletar_funcionario' funcionario.id %}">
+    {% csrf_token %}
+    <button type="submit">Confirmar Deleção</button>
+  </form>
+  <a href="{% url 'lista_funcionarios' %}">Cancelar</a>
+{% endblock %}

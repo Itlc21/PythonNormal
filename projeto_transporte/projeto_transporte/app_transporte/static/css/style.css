@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.btn-info {
+    margin-right: 10px;
+}
+
+.btn-warning {
+    margin-right: 10px;
+}
+
+/* static/app_transporte/css/style.css */
+.messages {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .messages li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  .messages .error {
+    color: #d9534f;
+    background-color: #f2dede;
+  }
+  
+  .messages .info {
+    color: #5bc0de;
+    background-color: #d9edf7;
+  }
+  
+  .messages .success {
+    color: #5cb85c;
+    background-color: #dff0d8;
+  }
+  
+  .messages .warning {
+    color: #f0ad4e;
+    background-color: #fcf8e3;
+  }
+  

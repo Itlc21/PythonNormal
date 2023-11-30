@@ -1,0 +1,17 @@
+<!-- app_transporte/templates/app_transporte/atualiza.html -->
+{% extends 'base_generic.html' %}
+{% load static %}
+
+{% block title %}Atualizar Funcionário{% endblock %}
+
+{% block content %}
+  <div class="container mt-4">
+    <h1 class="mb-4">Atualizar Funcionário</h1>
+    <form method="post" action="{% url 'atualizar_funcionario' funcionario.id %}" class="col-md-6">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Atualizar</button>
+      <a href="{% url 'lista_funcionarios' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+  </div>
+{% endblock %}
